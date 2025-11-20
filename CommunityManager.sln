@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityManager", "CommunityManager\CommunityManager\CommunityManager.csproj", "{CEC4E3A7-2A0C-4914-B5F6-66E09E0E68FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityManager.Client", "CommunityManager\CommunityManager.Client\CommunityManager.Client.csproj", "{36C7F8AA-1824-4452-B648-F76317147CE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC4E3A7-2A0C-4914-B5F6-66E09E0E68FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC4E3A7-2A0C-4914-B5F6-66E09E0E68FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC4E3A7-2A0C-4914-B5F6-66E09E0E68FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC4E3A7-2A0C-4914-B5F6-66E09E0E68FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C7F8AA-1824-4452-B648-F76317147CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C7F8AA-1824-4452-B648-F76317147CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C7F8AA-1824-4452-B648-F76317147CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C7F8AA-1824-4452-B648-F76317147CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
