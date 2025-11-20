@@ -10,6 +10,11 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.22"/>
+        <PackageReference Include="Syncfusion.Blazor" Version="31.2.12" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\CommunityManager.Shared\CommunityManager.Shared.csproj" />
     </ItemGroup>
 
 </Project>

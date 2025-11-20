@@ -1,12 +1,22 @@
 using CommunityManager.Client.Pages;
 using CommunityManager.Components;
+using CommunityManager.Models;
+using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+builder.Services.AddRazorPages();
+builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<SampleDb>();
+
+builder.Services.AddSyncfusionBlazor();
+
 
 var app = builder.Build();
 
@@ -29,5 +39,7 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(CommunityManager.Client._Imports).Assembly);
+
+app.MapControllers();
 
 app.Run();

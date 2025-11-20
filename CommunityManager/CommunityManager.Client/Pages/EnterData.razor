@@ -1,0 +1,19 @@
+﻿@page "/EnterData"
+@using CommunityManager.Models
+@inject HttpClient HttpClient
+@inject NavigationManager Navigation
+
+
+<h3>EnterData</h3>
+
+<SfGrid DataSource="Orders"></SfGrid>
+
+
+@code {
+    private WorkOrder[]? Orders;
+
+    protected override async Task OnInitializedAsync() {
+        Orders = await HttpClient.GetFromJsonAsync<WorkOrder[]>(new Uri(Navigation.BaseUri + "DoWork"));
+    }
+
+}
